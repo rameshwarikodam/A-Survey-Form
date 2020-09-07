@@ -16,12 +16,17 @@
         </section>
         <form id="survey-form">
             <div class="form-group">
-                <label for="name" id="name-label">Name</label>
+                <label for="name" id="name-label">Name
+                </label>
                 <input type="text" id="name" placeholder="Enter your name">
-                <label for="email" id="email-label">Email</label>
-                <input type="text" id="email" placeholder="Enter your Email">
-                <label for="age" id="number-label">Age</label>
-                <input type="number" id="number" min=10 max=99 placeholder="Age">
+                <label for="email" id="email-label">Email
+                </label>
+                <input type="text" id="email"
+                    pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required
+                    placeholder="Enter your Email">
+                <label for="age" id="number-label">Age
+                </label>
+                <input type="number" id="number" min=10 max=99 pattern="\d*" placeholder="Age">
             </div>
             <div class="form-group">
                 <p>How twitter has helped you to land your job?</p>
