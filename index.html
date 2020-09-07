@@ -9,24 +9,26 @@
 </head>
 
 <body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
     <article id="main">
-        <section id="title">
-            <h1 id="big-title">Twitter Survey Form</h1>
+        <section id="big-title">
+            <h1 id="title">Twitter Survey Form</h1>
             <p id="description">Thank you for taking the time to help us improve the platform</p>
         </section>
         <form id="survey-form">
             <div class="form-group">
                 <label for="name" id="name-label">Name
                 </label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" id="name" placeholder="Enter your name" required>
                 <label for="email" id="email-label">Email
                 </label>
-                <input type="text" id="email"
+                <input type="email" id="email"
                     pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required
                     placeholder="Enter your Email">
                 <label for="age" id="number-label">Age
                 </label>
-                <input type="number" id="number" min=10 max=99 pattern="\d*" placeholder="Age">
+                <input type="number" id="number" min=10 max=99 pattern="\d*" placeholder="Age" required>
             </div>
             <div class="form-group">
                 <p>How twitter has helped you to land your job?</p>
@@ -42,12 +44,12 @@
             <div class="form-group">
                 <p>Would you recommend twitter to a friend?</p>
                 <label>
-                    <input type="radio" name="user-recommend" class="input-radio" checked>
+                    <input type="radio" name="user-recommend" value="Definetely" class="input-radio" checked>
                     Definitely</label>
                 <label>
-                    <input type="radio" name="user-recommend" class="input-radio">May Be </label>
+                    <input type="radio" name="user-recommend" value="Maybe" class="input-radio">May Be </label>
                 <label>
-                    <input type="radio" name="user-recommend" class="input-radio">Not Sure
+                    <input type="radio" name="user-recommend" value="Notsure" class="input-radio">Not Sure
                 </label>
             </div>
             <div class="form-group">
