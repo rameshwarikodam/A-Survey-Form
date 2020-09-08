@@ -9,15 +9,13 @@
 </head>
 
 <body>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <article id="main">
-        <section id="big-title">
-            <h1 id="title">Twitter Survey Form</h1>
-            <p id="description">Thank you for taking the time to help us improve the platform</p>
-        </section>
+        <h1 id="title">Twitter Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form">
-            <div class="form-group">
+            <div class="user-details">
                 <label for="name" id="name-label">Name
                 </label>
                 <input type="text" id="name" placeholder="Enter your name" required>
@@ -26,11 +24,11 @@
                 <input type="email" id="email"
                     pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required
                     placeholder="Enter your Email">
-                <label for="age" id="number-label">Age
+                <label for="number" id="number-label">Age
                 </label>
-                <input type="number" id="number" min=10 max=99 pattern="\d*" placeholder="Age" required>
+                <input type="number" id="number" min=10 max=99 placeholder="Age" required>
             </div>
-            <div class="form-group">
+            <div class="dropdown-list">
                 <p>How twitter has helped you to land your job?</p>
                 <select id="dropdown" name="role" class="form-control" required>
                     <option disabled selected value>Select currect role</option>
@@ -41,7 +39,7 @@
                     <option value="Other">Other</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="radio-list">
                 <p>Would you recommend twitter to a friend?</p>
                 <label>
                     <input type="radio" name="user-recommend" value="Definetely" class="input-radio" checked>
@@ -52,7 +50,7 @@
                     <input type="radio" name="user-recommend" value="Notsure" class="input-radio">Not Sure
                 </label>
             </div>
-            <div class="form-group">
+            <div class="mostlike-feature">
                 <p>What is your favorite feature of twitter?</p>
                 <select id="most-like" name="mostlike" class="form-control" required>
                     <option disabled selected value>Select an option
@@ -62,7 +60,7 @@
                     <option value="tweet">Tweet Feature</option>
                 </select>
             </div>
-            <div id="form-group">
+            <div id="checkbox-list">
                 <p>What would you like to see improved?<span class="clue">(Check all that apply)</span>
                 </p>
                 <label class="input-checkbox">
@@ -82,12 +80,12 @@
                     Options
                 </label>
             </div>
-            <div id="form-group">
+            <div id="comment-list">
                 <p>Any comments or suggestions?</p>
                 <textarea id="comments" class="input-textarea" name="comment"
                     placeholder="Enter your comment here..."></textarea>
             </div>
-            <div id="form-group">
+            <div id="button">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
             </div>
         </form>

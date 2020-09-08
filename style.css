@@ -6,6 +6,19 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#title{
+    text-align: center;
+    font-size: 200%;
+}
+
+#description{
+    text-align: center;
+    font-size: 75%;
+    white-space: normal;
+    margin-top: 1%;
+}
+
+
 input[type=text]{
     width: 100%;
     margin-top: 1%;
@@ -46,18 +59,6 @@ input[type=dropdown]{
     border-radius: 4px;
 }
 
-#big-title{
-    text-align: center;
-    font-size: 30px;
-}
-
-#description{
-    text-align: center;
-    font-size: 40%;
-    white-space: normal;
-    /* padding: 1%; */
-}
-
 #survey-form{
     background-color: dodgerblue;
     border-radius: 3%;
@@ -66,6 +67,16 @@ input[type=dropdown]{
 }
 
 .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-list{
     display: flex;
     flex-direction: column;
 }
@@ -81,6 +92,24 @@ input[type=dropdown]{
     max-width:100%;
     height:auto;
     margin:2% 10% 0% 10%;
-    padding:5% 5% 0% 5%;
+    padding:2% 5% 0% 5%;
 }
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+[type=submit]{
+    margin: 2%;
+    padding: 1% 1% 1% 1%;
+    display: inline-block;
+    position: relative;
+        background-color: #050505;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 80%;
+        width: 10%;
 }
